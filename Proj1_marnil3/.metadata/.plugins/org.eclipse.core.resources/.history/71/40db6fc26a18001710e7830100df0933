@@ -28,7 +28,7 @@ public class FileLoad {
 		// Create and ArrayList for Flowers (flowerList)
 		try {
 		
-			br = new BufferedReader(new FileReader(dataFile)); // load a file into buffer
+			br = new BufferedReader(new FileReader("C:\\Users\\marnil3\\workspace\\Proj1_marnil3\\Lecture4\\" + dataFile)); // load a file into buffer
 		} catch (FileNotFoundException e) {
 			System.out.println(e.getMessage() + "The file was not found");
 			e.printStackTrace();

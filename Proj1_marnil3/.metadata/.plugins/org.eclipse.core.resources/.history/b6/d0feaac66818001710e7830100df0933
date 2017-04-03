@@ -54,12 +54,10 @@ public static void extractNode (Node node){
 	Element element = (Element) node;
 	
 	element.getElementsByTagName("cim:IdentifiedObject.name");//.item(0).getTextContent;
-	String rdfID = element.getAttribute("rdf:ID");
-	String name = element.getElementsByTagName("cim:IdentifiedObject.name").item(0).getTextContent();
 	
 	//System.out.println(element.getElementsByTagName("cim:IdentifiedObject.name"));
-	System.out.println(rdfID);
-	System.out.println(name);
+	System.out.println(element.getAttribute("rdf:ID"));
+	System.out.println(element.getElementsByTagName("cim:IdentifiedObject.name").item(0).getTextContent());
 	//can be used to read specific attribute of XML node.
 }
 }
